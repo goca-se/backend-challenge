@@ -50,6 +50,34 @@ Para simular essas transportadoras, use o arquivo `docker-compose.yml` que está
 > - **Transportadora B (LogiFretes)**: API JSON, instabilidade frequente 
 > - **Transportadora C (MegaShipping)**: REST com autenticação, limite de requisições baixo
 
+### Executando os serviços
+
+Você pode iniciar todos os serviços das transportadoras com o script de conveniência:
+
+```bash
+# Torne o script executável (se necessário)
+chmod +x run-services.sh
+
+# Execute o script
+./run-services.sh
+```
+
+Alternativamente, você pode usar o docker-compose diretamente:
+
+```bash
+docker-compose up --build -d
+```
+
+### Endpoints das Transportadoras
+
+Após iniciar os serviços, as transportadoras estarão disponíveis nos seguintes endpoints:
+
+- **Transportadora A (EntregasRápidas)**: http://localhost:6000/api/v1/entregas-rapidas/cotacao
+- **Transportadora B (LogiFretes)**: http://localhost:6001/api/cotacoes
+- **Transportadora C (MegaShipping)**: http://localhost:6002/shipping/quote
+
+Para mais detalhes sobre os payloads e respostas de cada transportadora, consulte o arquivo [PAYLOADS.md](PAYLOADS.md).
+
 ---
 
 ## 🔍 Critérios de Avaliação

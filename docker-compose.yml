@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  # Transportadora A - EntregasRapidas
+  entregas-rapidas:
+    build: ./entregas-rapidas
+    ports:
+      - "6000:3000"
+    restart: always
+    networks:
+      - freight-network
+
+  # Transportadora B - LogiFretes
+  logi-fretes:
+    build: ./logi-fretes
+    ports:
+      - "6001:3000"
+    restart: always
+    networks:
+      - freight-network
+
+  # Transportadora C - MegaShipping
+  mega-shipping:
+    build: ./mega-shipping
+    ports:
+      - "6002:3000"
+    restart: always
+    networks:
+      - freight-network
+
+  # Other services can be added here for the other transportadoras
+
+networks:
+  freight-network:
+    driver: bridge 
