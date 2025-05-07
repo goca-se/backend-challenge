@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cotacao>
+    <remetente>
+        <cep>01310100</cep>
+    </remetente>
+    <destinatario>
+        <cep>99999999</cep>
+    </destinatario>
+    <pacote>
+        <peso>1.5</peso>
+        <altura>20</altura>
+        <largura>30</largura>
+        <comprimento>15</comprimento>
+        <valor_declarado>150.00</valor_declarado>
+    </pacote>
+    <servico>
+        <tipo>todos</tipo>
+    </servico>
+</cotacao>

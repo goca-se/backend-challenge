@@ -17,7 +17,7 @@ A diretoria ameaça demitir o time inteiro se as taxas de abandono não caírem.
 
 Construa um **gateway de cotação de fretes** que integre múltiplas transportadoras, garantindo que o cliente sempre receba cotações rápidas e confiáveis.
 
-> Linguagens sugeridas: **Java, Python, Node.js ou Go**  
+> Linguagens sugeridas: **Ruby, Node.js, Go**  
 > Pode usar bibliotecas open-source (justifique suas escolhas)
 
 ---

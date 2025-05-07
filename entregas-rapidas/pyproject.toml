@@ -1,0 +1,12 @@
+[project]
+name = "entregas-rapidas"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.115.12",
+    "lxml>=5.4.0",
+    "python-multipart>=0.0.20",
+    "uvicorn>=0.34.2",
+]

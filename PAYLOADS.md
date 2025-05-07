@@ -18,7 +18,7 @@ POST http://localhost:3000/api/v1/entregas-rapidas/cotacao
 ### Headers
 ```
 Content-Type: application/xml
-Authorization: Basic ZW50cmVnYXNyYXBpZGFzOlNlbmhhQDEyMw==
+Authorization: Basic ZW50cmVnYXM6cmFwaWRhcw==
 ```
 
 ### Payload da Requisição
