@@ -17,14 +17,14 @@ if ! command -v docker &> /dev/null; then
 fi
 
 # Check if Docker Compose is installed
-if ! command -v docker-compose &> /dev/null; then
+if ! command -v docker compose &> /dev/null; then
     echo -e "${RED}Docker Compose is not installed! Please install Docker Compose and try again.${NC}"
     exit 1
 fi
 
 # Build and start the services
 echo -e "${GREEN}Building and starting all transportadora services...${NC}"
-docker-compose up --build -d
+docker compose up -d
 
 # Check if services are running
 if [ $? -eq 0 ]; then

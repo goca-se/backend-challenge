@@ -65,7 +65,7 @@ chmod +x run-services.sh
 Alternativamente, você pode usar o docker-compose diretamente:
 
 ```bash
-docker-compose up --build -d
+docker-compose up -d
 ```
 
 ### Endpoints das Transportadoras
