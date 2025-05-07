@@ -3,32 +3,31 @@ version: '3'
 services:
   # Transportadora A - EntregasRapidas
   entregas-rapidas:
-    build: ./entregas-rapidas
+    image: ghcr.io/goca-se/backend-challenge/entregas-rapidas:latest
     ports:
       - "6000:3000"
-    restart: always
+    restart: unless-stopped
     networks:
       - freight-network
 
   # Transportadora B - LogiFretes
   logi-fretes:
-    build: ./logi-fretes
+    image: ghcr.io/goca-se/backend-challenge/logi-fretes:latest
     ports:
       - "6001:3000"
-    restart: always
+    restart: unless-stopped
     networks:
       - freight-network
 
   # Transportadora C - MegaShipping
   mega-shipping:
-    build: ./mega-shipping
+    image: ghcr.io/goca-se/backend-challenge/mega-shipping:latest
     ports:
       - "6002:3000"
-    restart: always
+    restart: unless-stopped
     networks:
       - freight-network
 
-  # Other services can be added here for the other transportadoras
 
 networks:
   freight-network:
