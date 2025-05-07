@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cotacao>
     <remetente>
-        <cep>01310100</cep>
+        <cep>66666666</cep>
     </remetente>
     <destinatario>
-        <cep>04538132</cep>
+        <cep>66666667</cep>
     </destinatario>
     <pacote>
         <peso>1.5</peso>
