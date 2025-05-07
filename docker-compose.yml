@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   # Transportadora A - EntregasRapidas
   entregas-rapidas:
